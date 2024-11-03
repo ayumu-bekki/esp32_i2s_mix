@@ -9,11 +9,18 @@ WavファイルからPCMデータを取り出しての再生もサンプルと�
 I2SSoundMixクラスを開始(Run)すると音声処理用のスレッドを作成し、
 任意のタイミングでPlay関数で追加されたデータを合成した上で再生します。
 
+## 配線例
+![Circuit](docs/i2s_mix_circuit.jpg)
+ピンの変更はmain.ccの定数で行うことができます。
+
 ## 環境
 ESP-IDF v5.2-37
 
 MAX98357 I2S Class-D Mono Ampで動作確認しました。
 https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp
+
+## 注意点
+このサンプルはモノラルのみの対応となっています。
 
 ## WavファイルをC++向けヘッダーファイルにする
 
